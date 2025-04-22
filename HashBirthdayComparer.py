@@ -10,11 +10,11 @@ import time, hashlib
 
 start_time = time.time()
 # Create real confession file
-with open('aliceforpresident.pdf', 'w') as f:
+with open('AliceForPresident.pdf', 'w') as f:
     f.write("My zid is z5263769,\n\nI believe that Alice will become President - and I'm pretty good at predicting things.")
 
 # Create fake confession file
-with open('bobforpresident.pdf', 'w') as f:
+with open('BobForPresident.pdf', 'w') as f:
     f.write("My zid is z5263769,\n\nI believe that Bob will become President - and I'm pretty good at predicting things.")
 
 # Calculate the SHA256 hash of the confession files.
