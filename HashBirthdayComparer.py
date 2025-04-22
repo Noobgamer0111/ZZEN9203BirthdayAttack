@@ -30,7 +30,7 @@ def modify_file_to_match_hash(real_file, fake_file, num_digits):
     # Keep adding empty hex values i.e. 0A to the fake confession file until the hash matches the real confession file
     with open(fake_file, 'ab') as f:
         while True:
-            f.write(b'\x0A')  # Add a newline (0A in hex)
+            f.write(b'0A')  # Add a extra line feed character (0A in hex)
             fake_hash = get_md5_last_digits(fake_file, num_digits)
             if real_hash[:num_digits] == fake_hash[:num_digits]:
                 break
